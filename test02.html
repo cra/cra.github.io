@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://getbootstrap.com/examples/grid/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Очень осмысленный заголовок</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/grid.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="container">
+
+      <div class="page-header">
+        <h1>Пример научного результата</h1>
+        <p class="lead">Тут какое-то базовое описание, возможно, со <a href="http://mmdl.misis.ru">ссылками</a> на другие разделы. Поясняет, зачем это считается и кому это нужно</p>
+      </div>
+
+      <h3>Example data</h3>
+
+
+      <div class="row">
+        <div class="col-md-4">
+
+   <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+        <li class="active"><a href="#red" data-toggle="tab">EOS Birch</a></li>
+        <li><a href="#orange" data-toggle="tab">Orange</a></li>
+    </ul>
+    <div id="my-tab-content" class="tab-content">
+        <div class="tab-pane active" id="red">
+            <h1>fccFe BM EOS</h1>
+            <img src="images/fccFe-0K-eos-birchmurnaghan.png" width=100%>
+            <p>описание параметров построения графика</p>
+        </div>
+        <div class="tab-pane" id="orange">
+            <h1>fccNi Vinet EOS</h1>
+            <img src="images/fccNi-0K-eos-vinet.png" width=100%>
+            <p>описание параметров построения графика</p>
+        </div>
+    </div>
+        
+        </div>
+
+        <div class="col-md-4">
+          <h4>Project-specific input</h4>
+          
+          <dl>
+            <dt>fccFe
+            <dd>
+            <ol>
+              <li><a href="data/fccFe/01-prepare.sh">(bash) генерация входных данных</a></li>
+              <li><a href="data/fccNi/02-kappa.slurm">скрипт slurm</a></li>
+            </ol>
+            </dd>
+            </dt>
+            <dt>fccNi
+            <dd>
+            <ol>
+              <li><a href="data/fccNi/01-prepare.sh">(bash) генерация входных данных</a></li>
+              <li><a href="data/fccNi/02-kappa.slurm">скрипт slurm</a></li>
+            </ol>
+            </dd>
+            </dt>
+          </dl>
+        </div>
+        <div class="col-md-4">
+          <h4>Про картинки <small>опционально</small></h4>
+          <dl>
+            <dt>fccFe
+            <dd>
+            <ol>
+              <li><a href="data/fccFe/03-get_eos-fccFe.py">(python) plotscript</a></li>
+            </ol>
+            </dd>
+            </dt>
+            <dt>fccNi
+            <dd>
+            <ol>
+              <li><a href="data/fccNi/03-get_eos-fccNi.py">(python) plotscript</a></li>
+            </ol>
+            </dd>
+            </dt>
+          </dl>
+        </div>
+      </div>
+
+      <hr>
+
+      <h3>Какая-то ещё информация, которая почему-то не входит в вышеперечисленное</h3>
+      <p>Или отображалка содержимого файлов. Не знаю.</p>
+
+
+    </div> <!-- /container -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script>
+$(document).ready(function() {
+  $('#myTab a').click(function (e) {
+      e.preventDefault()
+          $(this).tab('show')
+  })
+
+});
+    </script>
+  
+
+</body></html>
